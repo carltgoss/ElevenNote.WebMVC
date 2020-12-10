@@ -37,8 +37,8 @@ namespace ElevenNote.Data
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
-                .Conventions
-                .Remove<PluralizingTableNameConvention>();
+            .Conventions
+            .Remove<PluralizingTableNameConvention>();
 
             modelBuilder
                 .Configurations
@@ -56,7 +56,7 @@ namespace ElevenNote.Data
         }
     }
 
-    public class IdentityUserRoleConfiguration : EntityTypeConfiguration<IdentityUserLogin>
+    public class IdentityUserRoleConfiguration : EntityTypeConfiguration<IdentityUserRole>
     {
         public IdentityUserRoleConfiguration()
         {
